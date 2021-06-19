@@ -1,0 +1,23 @@
+{
+  "name": "yourclock-test-environment",
+  "version": "1.0.0",
+  "description": "repositorio de pruebas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-clock/yourclock-test-environment.git"
+  },
+  "keywords": [
+    "test",
+    "yourclock"
+  ],
+  "author": "your-clock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-clock/yourclock-test-environment/issues"
+  },
+  "homepage": "https://github.com/your-clock/yourclock-test-environment#readme"
+}
