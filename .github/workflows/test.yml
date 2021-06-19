@@ -8,6 +8,9 @@ on:
 
 name: Create Release
 
+env:
+  CURRENT_VERSION: $(node -p "require('./package.json').version")
+
 jobs:
   build:
     name: Create Release
@@ -21,7 +24,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: $(node -p "require('./package.json').version")
+          tag_name: ${{ env.CURRENT_VERSION }}
           release_name: Release ${{ github.ref }}
           body: |
             Changes in this Release
