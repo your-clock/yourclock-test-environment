@@ -1,4 +1,4 @@
-name-template: 'v$RESOLVED_VERSION 🌈'
+name-template: 'v1.0.0 🌈'
 tag-template: 'v1.0.0'
 categories:
   - title: '🚀 Features'
