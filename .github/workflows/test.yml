@@ -29,7 +29,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.get-version.outputs.version }}
-          files: ./CHANGELOG.md
+          body_path: ./CHANGELOG.md
 
         #uses: actions/create-release@v1
         #env:
