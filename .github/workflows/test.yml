@@ -12,8 +12,7 @@ env:
   CURRENT_VERSION: $(node -p "require('./package.json').version")
 
 jobs:
-  build:
-    name: Create Release
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -29,7 +28,10 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.get-version.outputs.version }}
-          body_path: ./CHANGELOG.txt
+          body_path: |
+            ./CHANGELOG.txt
+          prerelease: false
+          draft: false
 
         #uses: actions/create-release@v1
         #env:
