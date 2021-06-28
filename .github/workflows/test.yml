@@ -25,8 +25,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ steps.get-version.outputs.version }}
-          body_path: |
-            ./CHANGELOG.txt
+          body_path: ./CHANGELOG.txt
           prerelease: false
           draft: false
 
