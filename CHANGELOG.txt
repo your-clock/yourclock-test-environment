@@ -1,5 +1,18 @@
-**new release**
+# Hola mundo
 
-· test \
-· tags \
-· releases
+- Lista 1
+- lista 2
+
+
+------------
+
+    console.log('hola mundo')
+
+| Col1  | Col2  |
+| ------------ | ------------ |
+|  A | B  |
+|  C | D  |
+
+~~tachado~~
+*cursiva*
+**Negrilla**
